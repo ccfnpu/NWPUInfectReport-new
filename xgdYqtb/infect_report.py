@@ -113,7 +113,7 @@ class XgdYqtb(object):
             data_from_html['userType'], data_from_html['userName'], data_from_html['qrlxzt'], data_from_html['bdzt'], data_from_html['xymc'], data_from_html['xssjhm'] = re.search(
                 r"userType:'([^']*)',userName:'([^']*)',qrlxzt:'([^']*)',bdzt:'([^']*)',xymc:'([^']*)',xssjhm:'([^']*)'", script_text).groups()
             try:
-                data_from_html['csbm'] = re.search(
+                data_from_html['szcsbm'] = re.search(
                     r'select\("(\d+)"\);\s+\}', script_text, re.S).group(1)
             except:
                 data_from_html['csbm'] = ''
